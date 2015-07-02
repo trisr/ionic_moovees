@@ -1,0 +1,17 @@
+<ion-view>
+		<ion-nav-title>{{result.title}}</ion-nav-title>
+    <ion-content>
+        <div class="list card">
+				  <div class="item item-body">
+				    <img class="full-image" ng-src="https://image.tmdb.org/t/p/w185{{result.poster_path}}">
+				    <h2>{{result.title}}</h2>
+				    <div>Rating : {{result.vote_average}}</div>
+				    <div>Release Date : {{result.release_date}}</div>
+				    <div>Runtime : {{result.runtime}} mins</div>
+				    <p>
+				      {{result.overview}}
+				    </p>
+				  </div>	
+				</div>
+    </ion-content>
+</ion-view>
